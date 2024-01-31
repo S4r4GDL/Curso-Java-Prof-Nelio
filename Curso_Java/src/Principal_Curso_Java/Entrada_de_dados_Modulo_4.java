@@ -33,11 +33,15 @@ public static void main(String[] args) {
 		System.out.println("Your weight \n(Format -> xx.xx): ");
 		weight = input.nextFloat();
 		
+		System.out.println("Your gender: ");
+		char gender = input.next().charAt(0);
+		
 		
 		System.out.println("Your name: " + name + 
 				"\nYour age: " + age + 
 				"\nYour height: " +  height.toString() +
 				"\nYour weight: "  + weight +
+				"\nYour gender: "  + gender +
 				"\nYour IMC: " + imcCalculator(height, weight).toString() );
 		
 
