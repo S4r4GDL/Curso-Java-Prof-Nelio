@@ -46,9 +46,12 @@ public class Variaveis_Tipos_Basicos_Modulo_4 {
 				"\nYour height: " + height.toString() +
 				"\nYour weight: " + String.valueOf(weight) +
 				"\nYour gender: " + String.valueOf(gender) +
-				"\nYour imc: " + String.format("%.3f", imc),
+				"\nYour imc: " + String.format("%.3f", imc)+
+				"\nThank you for your time!",
 				"\nYour personal informations",
 				JOptionPane.INFORMATION_MESSAGE);
+		
+		//teste
 		
 
 	}
