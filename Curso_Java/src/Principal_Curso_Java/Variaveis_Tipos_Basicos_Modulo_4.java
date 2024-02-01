@@ -1,7 +1,5 @@
 package Principal_Curso_Java;
 
-import java.util.Scanner;
-
 import javax.swing.JOptionPane;
 
 public class Variaveis_Tipos_Basicos_Modulo_4 {
@@ -9,7 +7,6 @@ public class Variaveis_Tipos_Basicos_Modulo_4 {
 	public static void main(String[] args) {
 		
 		
-		Scanner input = new Scanner(System.in);
 		
 		String name;
 		
@@ -51,7 +48,6 @@ public class Variaveis_Tipos_Basicos_Modulo_4 {
 				"\nYour personal informations",
 				JOptionPane.INFORMATION_MESSAGE);
 		
-		//teste
 		
 
 	}

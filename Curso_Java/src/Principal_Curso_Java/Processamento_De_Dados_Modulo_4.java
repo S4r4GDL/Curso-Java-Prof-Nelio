@@ -1,7 +1,6 @@
 package Principal_Curso_Java;
 
 import java.awt.FlowLayout;
-import java.awt.Graphics;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;

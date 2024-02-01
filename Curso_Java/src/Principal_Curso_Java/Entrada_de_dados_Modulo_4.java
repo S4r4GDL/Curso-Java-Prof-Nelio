@@ -44,7 +44,8 @@ public static void main(String[] args) {
 				"\nYour gender: "  + gender +
 				"\nYour IMC: " + imcCalculator(height, weight).toString() );
 		
-
+		input.close();
+		
 	}
 	private static Double imcCalculator(Double height, float weight) {
 	

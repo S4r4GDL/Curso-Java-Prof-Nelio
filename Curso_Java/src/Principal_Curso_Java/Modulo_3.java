@@ -14,7 +14,7 @@ public class Modulo_3{
 		name = input.nextLine();
 		
 		System.out.println("Olá " + name.toUpperCase());
-		
+		input.close();
 	}
 
 }
