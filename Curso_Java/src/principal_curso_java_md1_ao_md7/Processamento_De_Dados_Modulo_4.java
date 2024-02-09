@@ -1,4 +1,4 @@
-package Principal_Curso_Java;
+package principal_curso_java_md1_ao_md7;
 
 import java.awt.FlowLayout;
 
