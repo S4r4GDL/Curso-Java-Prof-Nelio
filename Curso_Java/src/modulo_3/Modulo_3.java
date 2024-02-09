@@ -1,4 +1,4 @@
-package principal_curso_java_md1_ao_md7;
+package modulo_3;
 
 import java.util.Scanner;
 
