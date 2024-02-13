@@ -9,7 +9,7 @@ public class CurrencyConverter {
 	}
 	
 	public double converter(double value) {
-		return dolarPrice * value + (dolarPrice * IOF);
+		return (dolarPrice + (dolarPrice * IOF)) * value ;
 	}
 	
 }
