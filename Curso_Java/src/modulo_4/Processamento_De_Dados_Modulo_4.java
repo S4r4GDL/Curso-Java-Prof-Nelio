@@ -1,4 +1,4 @@
-package module_4;
+package modulo_4;
 
 import java.awt.FlowLayout;
 
