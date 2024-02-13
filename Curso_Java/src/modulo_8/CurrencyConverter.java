@@ -1,4 +1,4 @@
-package module_8;
+package modulo_8;
 
 public class CurrencyConverter {
 	private static double IOF = 0.06;

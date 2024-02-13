@@ -1,4 +1,4 @@
-package module_8;
+package modulo_8;
 
 public class Triangle {
 	

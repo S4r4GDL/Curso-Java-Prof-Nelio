@@ -1,4 +1,4 @@
-package module_6;
+package modulo_6;
 
 public class Estruturas_de_Repeticao_Modulo_6 {
 
