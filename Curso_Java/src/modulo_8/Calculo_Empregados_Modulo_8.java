@@ -21,7 +21,7 @@ Locale.setDefault(Locale.US);
 		
 		System.out.printf("Employee: " + employee.toString());
 		
-		System.out.println("Which percentage to increase salary:");
+		System.out.println("\nWhich percentage to increase salary:");
 		employee.increaseSalary(input.nextDouble());
 		
 		System.out.printf("Updated data: " + employee.toString());
