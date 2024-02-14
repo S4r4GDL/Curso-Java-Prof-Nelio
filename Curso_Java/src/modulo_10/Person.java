@@ -7,15 +7,12 @@ public class Person {
 	private Date dataBirth;
 	private String gender;
 	private String email;
-	
 	private boolean working;
 	
 	public Person() {
 		
 	}
 	
-	
-
 	public Person(String name, Date dataBirth, String gender, String email, boolean working) {
 		this.name = name;
 		this.dataBirth = dataBirth;
