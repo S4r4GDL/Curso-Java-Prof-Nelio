@@ -1,10 +1,12 @@
 package modulo_9;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Account_Register_Module_9 {
  public static void main(String[] args) {
 	 
+	 Locale.setDefault(Locale.US);
 
 	 Account account;
 	 Scanner input = new Scanner(System.in);
