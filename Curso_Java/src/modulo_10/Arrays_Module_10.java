@@ -16,12 +16,12 @@ public class Arrays_Module_10 {
 		
 		double[] heights = new double[quantity];
 		
-		for (int i = 0; i < quantity; i++) {
+		for (int i = 0; i < heights.length; i++) {
 			heights[i] = input.nextDouble();
 		}
 		
 		double avg = 0.0;
-		for (int i = 0; i < quantity; i++) {
+		for (int i = 0; i < heights.length; i++) {
 			avg += heights[i];
 		}
 		avg /= (double)quantity;

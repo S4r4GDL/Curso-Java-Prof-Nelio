@@ -18,7 +18,7 @@ public class Arrays_Products_Module_10 {
 			
 			Product[] products = new Product[quantity];
 			
-			for (int i = 0; i < quantity; i++) {
+			for (int i = 0; i < products.length; i++) {
 				products[i] = new Product();
 				input.nextLine();
 				System.out.println("Name:");
@@ -30,7 +30,7 @@ public class Arrays_Products_Module_10 {
 			}
 			
 			double avg = 0.0;
-			for (int i = 0; i < quantity; i++) {
+			for (int i = 0; i < products.length; i++) {
 				avg += products[i].getPrice();
 			}
 			
