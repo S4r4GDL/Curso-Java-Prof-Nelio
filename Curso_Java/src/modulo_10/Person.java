@@ -7,13 +7,13 @@ public class Person {
 	private Date dataBirth;
 	private String gender;
 	private String email;
-	private boolean working;
+	private Boolean working;
 	
 	public Person() {
 		
 	}
 	
-	public Person(String name, Date dataBirth, String gender, String email, boolean working) {
+	public Person(String name, Date dataBirth, String gender, String email, Boolean working) {
 		this.name = name;
 		this.dataBirth = dataBirth;
 		this.gender = gender;
@@ -56,11 +56,11 @@ public class Person {
 		this.gender = gender;
 	}
 	
-	public boolean isWorking() {
+	public Boolean isWorking() {
 		return working;
 	}
 	
-	public void setWorking(boolean working) {
+	public void setWorking(Boolean working) {
 		this.working = working;
 	}
 	
