@@ -1,5 +1,6 @@
 package modulo_10;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Arrays_Module_10 {
@@ -7,7 +8,7 @@ public class Arrays_Module_10 {
 	
 	public static void main(String[] args) {
 		
-		
+		Locale.setDefault(Locale.US);
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("How many people:");
@@ -19,12 +20,12 @@ public class Arrays_Module_10 {
 			heights[i] = input.nextDouble();
 		}
 		
-		double avr = 0.0;
+		double avg = 0.0;
 		for (int i = 0; i < quantity; i++) {
-			avr += heights[i];
+			avg += heights[i];
 		}
-		
-		System.out.println(avr/(double)quantity);
+		avg /= (double)quantity;
+		System.out.printf("%.2f", avg);
 		input.close();
 	}
 }

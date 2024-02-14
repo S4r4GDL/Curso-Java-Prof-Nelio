@@ -5,6 +5,7 @@ public class Product {
 	double price;
 	int quantity;
 	
+	
 	public void setName(String name) {
 		this.name = name;
 	}
