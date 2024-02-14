@@ -14,23 +14,25 @@ public class Challenge_Arrays_Hostel_Module_10 {
 		int n = input.nextInt();
 		
 		for (int i = 0; i < n; i++) {
-			
-			input.nextLine();
-			
 			System.out.printf("\nRent #%d:\n", i);
-			System.out.println("Name: ");
+			System.out.print("Name: ");
+			input.nextLine();
 			String name = input.nextLine();
-			System.out.println("Email: ");
+			
+			System.out.print("Email: ");
 			String email = input.nextLine();
-			System.out.println("Room: ");
+			
+			System.out.print("Room: ");
 			int room = input.nextInt();
 			clients[room] = new Client(room, name, email);
 			System.out.println(clients[room].toString());
 		}
 		
-		for (int i = 0; i < n; i++) {
+		System.out.println();
+		System.out.println("Busy rooms");
+		for (int i = 0; i < 10; i++) {
 			if(clients[i] != null)
-				System.out.println(clients[i].toString());
+				System.out.println(clients[i]);
 		}
 		
 		input.close();
