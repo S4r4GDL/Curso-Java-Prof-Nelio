@@ -1,6 +1,5 @@
 package modulo_10;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Challenge_Arrays_Hostel_Module_10 {
