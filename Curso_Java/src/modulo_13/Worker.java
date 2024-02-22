@@ -62,7 +62,7 @@ public class Worker {
 	}
 	
 	public Double income(Integer year, Integer month) {
-		Double result = 0.0;
+		Double result = baseSalary;
 		
 		for (HourContract hourContract : contracts) {
 			
