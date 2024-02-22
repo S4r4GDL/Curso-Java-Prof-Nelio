@@ -1,6 +1,7 @@
 package modulo_13;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Worker {
@@ -61,7 +62,18 @@ public class Worker {
 	}
 	
 	public Double income(Integer year, Integer month) {
-		return null;
+		Double result = 0.0;
+		
+		for (HourContract hourContract : contracts) {
+			
+			Calendar calendar = Calendar.getInstance();
+			calendar.setTime(hourContract.getDate());
+			
+			if(calendar.get(Calendar.MONTH) == month && calendar.get(Calendar.YEAR) == year)
+				result += hourContract.totalValue();
+		}
+		
+		return result;
 		
 	}
 }
