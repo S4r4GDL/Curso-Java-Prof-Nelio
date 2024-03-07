@@ -15,6 +15,7 @@ public class Post {
 	
 	public Post() {
 		commentsList = new ArrayList<Comment>();
+		likes = 0;
 	}
 	public Post(String title, String content, Date moment, Integer likes) {
 		this.title = title;
@@ -64,7 +65,7 @@ public class Post {
 	public String toString() {
 		StringBuilder strB = new StringBuilder();
 		strB.append(title + "\n");
-		strB.append(likes + "Likes -");
+		strB.append(likes + " Likes - ");
 		strB.append(format.format(moment) + "\n");
 		strB.append("Comments:\n");
 		for (Comment comment : commentsList) {

@@ -21,6 +21,9 @@ public class Aplication_StringBuilder_Module_13 {
 		post2.addComment(new Comment("Good night"));
 		post2.addComment(new Comment("May the Force be with you"));
 		
+		System.out.println(post1.toString());
+		System.out.println(post2.toString());
+		
 		
 		
 		
