@@ -5,7 +5,7 @@ public class OrderItem {
 	private Product product;
 	
 	public OrderItem() {
-		
+		this.quantity = 0;
 	}
 
 	public OrderItem(Integer quantity, Product product, Double price) {
@@ -17,8 +17,12 @@ public class OrderItem {
 		return quantity;
 	}
 
-	public void setQuantity(Integer quantity) {
-		this.quantity = quantity;
+	public void addQuantity(Integer quantity) {
+		this.quantity += quantity;
+	}
+	
+	public void removeQuantity(Integer quantity) {
+		this.quantity -= quantity;
 	}
 
 	public Product getProduct() {
