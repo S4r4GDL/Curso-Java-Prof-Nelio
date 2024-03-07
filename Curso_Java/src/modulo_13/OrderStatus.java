@@ -14,5 +14,9 @@ public enum OrderStatus {
 
 	}  
 	
+	public int getValue() {
+		return value;
+	}
+	
 	
 }
