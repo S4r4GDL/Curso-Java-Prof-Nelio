@@ -3,7 +3,6 @@ package modulo_13;
 public class OrderItem {
 	private Integer quantity;
 	private Product product;
-	private Double price;
 	
 	public OrderItem() {
 		
@@ -12,7 +11,6 @@ public class OrderItem {
 	public OrderItem(Integer quantity, Product product, Double price) {
 		this.quantity = quantity;
 		this.product = product;
-		this.price = price;
 	}
 
 	public Integer getQuantity() {
@@ -30,14 +28,12 @@ public class OrderItem {
 	public void setProduct(Product product) {
 		this.product = product;
 	}
-
-	public Double getPrice() {
-		return price;
+	
+	public Double subTotal(){
+		return product.getPrice() * quantity;
 	}
-
-	public void setPrice(Double price) {
-		this.price = price;
-	}
+	
+	
 	
 	
 }
