@@ -1,5 +1,6 @@
 package modulo_13;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -10,6 +11,7 @@ public class Post {
 	private Date moment;
 	private Integer likes;
 	private List<Comment> commentsList; 
+	private static SimpleDateFormat format = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
 	
 	public Post() {
 		commentsList = new ArrayList<Comment>();
@@ -59,4 +61,15 @@ public class Post {
 		commentsList.remove(comment);
 	}
 	
+	public String toString() {
+		StringBuilder strB = new StringBuilder();
+		strB.append(title + "\n");
+		strB.append(likes + "Likes -");
+		strB.append(format.format(moment) + "\n");
+		strB.append("Comments:\n");
+		for (Comment comment : commentsList) {
+			strB.append(comment.getText() + "\n");
+		}
+		return strB.toString();
+	}
 }
