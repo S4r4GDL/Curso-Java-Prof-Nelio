@@ -13,8 +13,11 @@ public class Aula162 {
 		employeesList.add(employee1);
 		employeesList.add(employee2);
 		employeesList.stream().forEach(emp -> {
-			System.out.println(String.format("Name: %s\nPayment: %1.2f", emp.getName(), emp.payment()));
-		});;
+			System.out.println(
+					String.format("Name: %s\nPayment: %1.2f",
+							emp.getName(),
+							emp.payment()));
+		});
 
 	}
 
